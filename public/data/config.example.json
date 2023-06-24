@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "name": "Foo",
+      "icon": "bi bi-cloud-fill",
+      "apps": [
+        {
+          "image": "/data/images/bar.png",
+          "name": "Bar",
+          "description": "Lorem ipsum",
+          "link": {
+            "href": "https://example.com",
+            "attributes": {
+              "target": "_blank"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
