@@ -1,0 +1,19 @@
+{
+  "name": "home",
+  "version": "0.0.0",
+  "description": "Very simple homepage for displaying selfhosted apps",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wds --root-dir ./public --watch",
+    "version": "offline-github-changelog --next=${npm_new_version} | sed -e '/Release v.*/d;s/ (\\[.*\\]\\(.*\\))//gm' > CHANGELOG.md && git add CHANGELOG.md",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "m4rc3l05",
+  "license": "MIT",
+  "devDependencies": {
+    "@web/dev-server": "^0.2.3",
+    "offline-github-changelog": "^3.0.1",
+    "patch-package": "^7.0.0"
+  }
+}
