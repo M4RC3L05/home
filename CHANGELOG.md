@@ -1,3 +1,7 @@
+### v0.2.0 (2023-06-24)
+
+- [Make esmsm url configurable](https://github.com/M4RC3L05/home/commit/0e13fd07524a6ac5ea8a70f0aa002a26a69a75df)
+
 ### v0.1.1 (2023-06-24)
 
 - [Add favicon](https://github.com/M4RC3L05/home/commit/22a9df10eb52e92e9f476deec05dc669e7b87187)
