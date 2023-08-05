@@ -1,3 +1,7 @@
+### v0.3.0 (2023-08-05)
+
+- [Add docker support](https://github.com/M4RC3L05/home/commit/681051bc9c9777d970feca1ea28913231d0a23d9)
+
 ### v0.2.0 (2023-06-24)
 
 - [Make esmsm url configurable](https://github.com/M4RC3L05/home/commit/0e13fd07524a6ac5ea8a70f0aa002a26a69a75df)
