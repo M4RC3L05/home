@@ -12,8 +12,8 @@
   "author": "m4rc3l05",
   "license": "MIT",
   "devDependencies": {
-    "@web/dev-server": "^0.2.3",
+    "@web/dev-server": "^0.3.2",
     "offline-github-changelog": "^3.0.1",
-    "patch-package": "^7.0.0"
+    "patch-package": "^8.0.0"
   }
 }
