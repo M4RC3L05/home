@@ -32,8 +32,8 @@
     const domRange = document.createRange();
 
     await Promise.allSettled([
-        "/v122/bootstrap@5.3.0-alpha3/dist/css/bootstrap.css",
-        "/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
+        "/v130/bootstrap@5.3.2/dist/css/bootstrap.css",
+        "/v130/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css"
     ].map(async u => new Promise(resolve => {
       const link = document.createElement("link");
       link.rel = "stylesheet";
