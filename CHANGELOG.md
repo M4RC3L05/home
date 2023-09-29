@@ -1,3 +1,9 @@
+### v0.4.0 (2023-09-29)
+
+- [Update dependencies](https://github.com/M4RC3L05/home/commit/a4f25fdda0d74463c266f7118a47c9777eec8865)
+- [Update front deps](https://github.com/M4RC3L05/home/commit/08961f8f39b80884b3607468b50035b50d29233d)
+- [Add new line to Dockerfile](https://github.com/M4RC3L05/home/commit/dc7f7703d15a45ddab5273f4c3f9f378c4bb4476)
+
 ### v0.3.0 (2023-08-05)
 
 - [Add docker support](https://github.com/M4RC3L05/home/commit/681051bc9c9777d970feca1ea28913231d0a23d9)
