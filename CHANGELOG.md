@@ -1,3 +1,9 @@
+### v1.0.0 (2023-12-09)
+
+- [Update node version](https://github.com/M4RC3L05/home/commit/6819e2fc63ef2874758d05f152a3a8c2214424fa)
+- [Use bootstrap css directly](https://github.com/M4RC3L05/home/commit/8ca23abb72597fbdc04b5b2da0fd22f347a73b26)
+- [Use latest nodejs lts](https://github.com/M4RC3L05/home/commit/3ae170f4760f6ce1c8a1e5f1d404c12616a58fff)
+
 ### v0.4.0 (2023-09-29)
 
 - [Update dependencies](https://github.com/M4RC3L05/home/commit/a4f25fdda0d74463c266f7118a47c9777eec8865)
