@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -30,17 +32,6 @@
     const config = await fetch("./data/config.json").then(response => response.json())
     const categoriesApps = document.querySelector("div#categoriesApps");
     const domRange = document.createRange();
-
-    await Promise.allSettled([
-        "/v130/bootstrap@5.3.2/dist/css/bootstrap.css",
-        "/v130/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css"
-    ].map(async u => new Promise(resolve => {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = `${config.esmsh}${u}`;
-      document.head.prepend(link);
-      link.onload = () => { resolve(); };
-    })))
 
     const renderCategory = (category) => `
       <div class="col">
