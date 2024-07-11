@@ -1,5 +1,5 @@
-FROM nginx:1.25-alpine-slim
+FROM lipanski/docker-static-website:latest
 
-COPY ./public /usr/share/nginx/html
+COPY ./public .
 
-VOLUME [ "/usr/share/nginx/html/data" ]
+VOLUME [ "/home/static/data" ]
