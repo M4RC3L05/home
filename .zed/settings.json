@@ -1,4 +1,16 @@
 {
   "tab_size": 2,
-  "format_on_save": "on"
+  "format_on_save": "on",
+  "languages": {
+    "JavaScript": {
+      "formatter": "language_server",
+      "language_servers": [
+        "deno",
+        "!eslint",
+        "!typescript-language-server",
+        "!vtsls",
+        "..."
+      ]
+    }
+  }
 }
