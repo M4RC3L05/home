@@ -1,0 +1,8 @@
+{
+  "name": "@m4rc3l05/home",
+  "version": "1.0.0",
+  "exports": "./public/index.html",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-sys jsr:@std/http/file-server ./public"
+  }
+}
