@@ -9,7 +9,9 @@ const renderCategory = (category) => `
 `;
 
 const renderApp = (app) => {
-  const props = Object.entries(app.link.attributes).map(([key, value]) => `${key}="${value}"`).join(" ");
+  const props = Object.entries(app.link.attributes)
+    .map(([key, value]) => `${key}="${value}"`)
+    .join(" ");
 
   return `
     <a href="${app.link.href}" ${props} style="color: inherit; text-decoration: inherit;">
@@ -24,13 +26,15 @@ const renderApp = (app) => {
       </div>
     </a>
   `;
-}
+};
 
-const config = await fetch("./data/config.json").then((response) => response.json());
+const config = await fetch("./data/config.json").then((response) =>
+  response.json()
+);
 const app = document.querySelector("#app");
 
 app.innerHTML = `
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-    ${config.categories.map(category => renderCategory(category)).join("")}
+    ${config.categories.map((category) => renderCategory(category)).join("")}
   </div>
 `;
