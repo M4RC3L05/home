@@ -1,6 +1,6 @@
 const renderCategory = (category) => `
   <div class="col">
-    <h1 style="margin-bottom: 12px">
+    <h1 style="margin-bottom: 12px; overflow: hidden; text-overflow: ellipsis;">
       <i class="${category.icon}" style="margin-right: 2px"></i> ${category.name}
     </h1>
 
@@ -13,8 +13,8 @@ const renderApp = (app) => {
 
   return `
     <a href="${app.link.href}" ${props} style="color: inherit; text-decoration: inherit;">
-      <div style="display: flex; cursor: pointer; background-color: var(--card-color); border-radius: 8px; margin-bottom: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border: 1px solid var(--card-border-color)">
-        <div style="display: flex; flex-direction: row; width: 100%; align-items: center; padding: 12px">
+      <div style="display: flex; overflow-x: hidden; cursor: pointer; background-color: var(--card-color); border-radius: 8px; margin-bottom: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border: 1px solid var(--card-border-color)">
+        <div style="display: flex; flex-direction: row; width: 100%; align-items: center; padding: 12px; overflow: hidden;">
           <img src="${app.image}" style="margin-right: 12px" width="48" height="48">
           <div style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
             <h3 style="margin: 0; margin-bottom: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">${app.name}</h3>
