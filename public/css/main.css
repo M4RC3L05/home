@@ -1,1 +1,65 @@
-@import url(./_resets.css);
+@import "./_resets.css";
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --card-color: hsl(0, 0%, 100%);
+  --card-border-color: hsl(0, 0%, 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222;
+    --text-color: #fff;
+    --card-color: #2b2b2b;
+    --card-border-color: hsl(0, 0%, 20%);
+  }
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+.col {
+  width: calc((100%/3) - 10px);
+}
+
+@media (max-width: 1240px) {
+  .col {
+    width: calc((100%/2) - 10px);
+  }
+}
+
+@media (max-width: 850px) {
+  .col {
+    width: calc(100% - 10px);
+  }
+}
