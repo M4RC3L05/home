@@ -13,7 +13,7 @@ const renderApp = (app) => {
 
   return `
     <a href="${app.link.href}" ${props} style="color: inherit; text-decoration: inherit;">
-      <div style="cursor: pointer; background-color: var(--card-color); border-radius: 8px; margin-bottom: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border: 1px solid var(--card-border-color)">
+      <div style="display: flex; cursor: pointer; background-color: var(--card-color); border-radius: 8px; margin-bottom: 12px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border: 1px solid var(--card-border-color)">
         <div style="display: flex; flex-direction: row; width: 100%; align-items: center; padding: 12px">
           <img src="${app.image}" style="margin-right: 12px" width="48" height="48">
           <div style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">

@@ -34,6 +34,7 @@
 html,
 body {
   height: 100vh;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
@@ -60,6 +61,6 @@ body {
 
 @media (max-width: 850px) {
   .col {
-    width: calc(100% - 10px);
+    width: 100%;
   }
 }
