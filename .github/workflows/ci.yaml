@@ -18,8 +18,10 @@ jobs:
         run: |
           deno lint
           yamllint .
+          deno run -A npm:html-validate .
 
       - name: check format
         run: |-
           deno fmt --check
           yamlfmt -dry -lint .
+          deno run -A npm:prettier -c "./public/**/*.{html,css}"
