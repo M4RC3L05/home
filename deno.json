@@ -1,7 +1,7 @@
 {
   "name": "@m4rc3l05/home",
   "version": "1.1.1",
-  "exports": "./public/index.html",
+  "exports": "./deno.json",
   "lock": false,
   "tasks": {
     "dev": "deno run --allow-net --allow-read --allow-sys jsr:@std/http/file-server ./public"
