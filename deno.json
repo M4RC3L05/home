@@ -2,11 +2,27 @@
   "name": "@m4rc3l05/home",
   "version": "1.1.2",
   "exports": "./deno.json",
+  "tasks": {
+    "dev": {
+      "description": "Run dev server",
+      "command": "deno run --allow-net --allow-read --allow-sys jsr:@std/http/file-server ./public"
+    },
+    "check:fmt": {
+      "description": "Run formatting checks",
+      "command": "deno fmt --check"
+    },
+    "check:lint": {
+      "description": "Run lint checks",
+      "command": "deno lint"
+    },
+    "checks": {
+      "description": "Run code checks",
+      "dependencies": ["check:fmt", "check:lint"]
+    }
+  },
+
   "lock": false,
   "fmt": {
     "exclude": ["public/css/bootstrap-icons.min.css"]
-  },
-  "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-sys jsr:@std/http/file-server ./public"
   }
 }
