@@ -20,7 +20,6 @@
       "dependencies": ["check:fmt", "check:lint"]
     }
   },
-
   "lock": false,
   "fmt": {
     "exclude": ["public/css/bootstrap-icons.min.css"]
