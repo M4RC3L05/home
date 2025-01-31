@@ -1,20 +1,2 @@
 [tools]
-deno = "2.0.0"
-
-[tasks."check:format"]
-run = """
-#!/usr/bin/env sh
-
-set -ex
-
-deno fmt --check
-"""
-
-[tasks."check:lint"]
-run = """
-#!/usr/bin/env sh
-
-set -ex
-
-deno lint
-"""
+deno = "2.1.9"
