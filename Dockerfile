@@ -1,5 +1,5 @@
-FROM lipanski/docker-static-website:latest
+FROM docker.io/joseluisq/static-web-server:2.35.0-alpine
 
-COPY ./public .
+COPY ./public /public
 
-VOLUME [ "/home/static/data" ]
+VOLUME [ "/public/data" ]
